@@ -1,0 +1,44 @@
+body {
+  min-height: 10000000vh;
+  background: linear-gradient(to bottom, greenyellow, dodgerblue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: darkslategray;
+  margin: 0;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: darkslategray;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid white;
+  text-align: left;
+}
+
+th {
+  background-color: darkslategray;
+  color: white;
+}
+
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

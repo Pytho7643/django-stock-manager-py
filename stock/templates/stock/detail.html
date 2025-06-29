@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.name }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>{{ product.name }}</h1>
+    <p>Price: {{ product.price }} KWD</p>
+    <p>Quantity: {{ product.quantity }}</p>
+    <a href="{% url 'index' %}">Back to product list</a>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "1": {
+    "name": "apple",
+    "price": "two",
+    "quantity": 200
+  },
+  "2": {
+    "name": "orange",
+    "price": 1.5,
+    "quantity": -10
+  }
+}

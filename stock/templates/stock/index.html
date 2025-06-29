@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Manager</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <h1>Available Products</h1>
+    {% if product_list %}
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Price (KWD)</th>
+          <th>Quantity</th>
+        </tr>
+        {% for product in product_list %}
+        <tr>
+          <td><a href="{% url 'detail' product.id %}">{{ product.name }}</a></td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.quantity }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    {% else %}
+      <p>No products available.</p>
+    {% endif %}
+  </body>
+</html>
